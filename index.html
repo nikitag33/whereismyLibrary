@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my Biblio</title>
+    
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- Lato Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,700" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="background"></div>
+    <div class="block1">
+        <div class="title">
+            <h2>Where is my</h2>
+            <br>
+            <a href="landing.html"><h1>Library</h1></a>
+        </div>
+        <div class="col-lg-6 cerca">
+            <div class="input-group">
+                <input type="text" class="form-control" id="sbar" placeholder="Cerca biblioteca, comune o cap" aria-label="Cerca per Comune"> <span class="input-group-btn"> 
+        <button class="btn btn-secondary show-search go" id="go" type="button">Go!</button>
+      </span> </div>
+        </div>
+    </div>
+    <div class="block2">
+        <button class='btn btn-secondary btn-lg show-data bottone1'>Explore</button>
+        <div class="container nascosto">
+            <div class='row col-xs-12 list-unstyled' id='data-list'>
+            
+            </div>
+            <hr>
+            <button class='btn btn-secondary btn-sm btn-block show-data bottone2'>Load More Library</button>
+            <button class='btn btn-secondary btn-sm btn-block show-search bottone3'></button>
+        </div>
+    </div>
+    <div class="container footer">
+        <h3>Design by Gino Fiore - Quasar Design University</h3>
+    </div>
+    
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    
+    <!-- Append - Cards Script -->
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry col-xs-6">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h4 class="card-title">{{denominazione}}</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">{{comune}} ({{provincia}})</h6>
+                    <p class="card-text">{{indirizzo}} {{cap}}<br>{{telefono}}</p>
+                </div>
+            </div>
+        </div>
+    </script>
+    
+    
+</body>
+
+</html>

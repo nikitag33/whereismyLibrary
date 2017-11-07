@@ -1,0 +1,140 @@
+html,
+body {
+    height: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-image: url(img/D.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+@font-face {
+    font-family: Dry Brush;
+    src: url(fonts/Dry Brush.ttf);
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 0;
+    color: white;
+    font-family: Dry Brush;
+    font-size: 80pt;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+h2 {
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 300;
+    font-size: 14pt;
+    text-align: center
+}
+
+h4 {
+    color: #61493b;
+    font-family: 'Lato', sans-serif;
+    font-size: 700;
+    font-size: 18pt;
+}
+
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-size: 400;
+    font-size: 12pt;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 300;
+    font-size: 12pt;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 300;
+    font-size: 8pt;
+    color: lightgray;
+    float: left;
+}
+
+.btn {
+    background-color: #61493b;
+    border-color: #604438;
+}
+
+.btn:hover {
+    background-color: #82634c;
+    border-color: #61493b;
+}
+
+button,
+input {
+    font-family: 'Lato', sans-serif;
+}
+
+div {
+    font-family: myFirstFont;
+}
+
+.block1 {
+    padding-top: 5px;
+    width: 100%;
+    height: 60vh;
+}
+
+.block2 {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.title {
+    margin-top: 3%;
+}
+
+.cerca {
+    margin: auto;
+    margin-top: 5%;
+}
+
+.bottone1 {
+    width: auto;
+    margin-left: 46%;
+    margin-top: 5%;
+    margin-bottom: 30vh;
+}
+
+.bottone2 {
+    display: none;
+    margin-top: 3%;
+    margin-bottom: 10vh;
+}
+
+.nascosto {
+    display: none;
+}
+
+.entry {
+    margin: 2%;
+}
+
+.card-body {
+    border-color: #604438;
+    height: auto;
+    background-color: floralwhite;
+}
+
+.footer {
+    margin: 1%;
+}
